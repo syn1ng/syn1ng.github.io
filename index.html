@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="musicplayer.css">
+    <title>syning's site</title>
+</head>
+<body>
+    <div class="text-block" id="intro-text">
+        <img src="top-image.gif" alt="Top Image" class="text-block-image" />
+        <p>Hey!!! My name is Syning!!!
+        <br>I'm a braaap who is a huge fan of video games, art and music.<br>It's a mouthful to introduce myself in a small, tight place like my bios on certain social media, so this website lets you know me better!! (hopefully..)
+        <br><br> What I make:
+        <br>Art: Pixel art, digital and traditional art, animations, and more!
+        <br>Code: Websites and mods for games I like to play.
+        <br>Vid
+        </p>
+        <a href="rest.html" class="figure-it-out-link">Figure It Out</a>
+    </div>
+
+    <img id="toggle-music-player" class="toggle-img" src="hide.png" alt="Toggle Music Player" />
+
+    <div class="music-player" id="music-player">
+        <div class="cover-art">
+            <img id="cover-image" src="default-cover.jpg" alt="Cover Art">
+        </div>
+        <div class="song-info">
+            <div id="song-title" class="song-title">Song Title</div>
+            <div id="artist-name" class="artist-name">Artist Name</div>
+        </div>
+        <div class="controls">
+            <button id="prev-btn" class="control-btn">⏮</button>
+            <button id="play-btn" class="control-btn">▶️</button>
+            <button id="next-btn" class="control-btn">⏭</button>
+        </div>
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+        <div class="volume-control">
+            <span>🔊</span>
+            <input id="volume-slider" class="volume-slider" type="range" min="0" max="100" value="50">
+        </div>
+    </div>
+
+    <div class="social-icons">
+        <img src="girlie.gif" alt="Girlie GIF" class="social-icon-girlie" />
+        <a href="https://www.youtube.com/@syn1ng" target="_blank">
+            <img src="youtube.svg" alt="my youtube!!" class="social-icon" />
+        </a>
+        <a href="https://twitter.com/syn1ng" target="_blank">
+            <img src="twitter.svg" alt="my xeeter" class="social-icon" />
+        </a>
+    </div>
+
+    <a href="https://nekoweb.org/" style="position: fixed; bottom: 10px; left: 10px; z-index: 99999;">
+        <img src="https://nekoweb.org/assets/buttons/button11.gif" alt="Neko Web Button">
+    </a>
+
+    <script>
+        const toggleImage = document.getElementById('toggle-music-player');
+        const musicPlayer = document.getElementById('music-player');
+
+        toggleImage.addEventListener('click', () => {
+            if (musicPlayer.style.display === 'none' || musicPlayer.style.display === '') {
+                musicPlayer.style.display = 'block';
+                toggleImage.src = 'show.png';
+            } else {
+                musicPlayer.style.display = 'none';
+                toggleImage.src = 'hide.png';
+            }
+        });
+    </script>
+
+    <meta content="Syning Website" property="og:title">
+    <meta content="website." property="og:description">
+    <meta content="Welcome to my website! My name is" property="og:site_name">
+    <meta content='https://files.catbox.moe/8fyron.png' property='og:image'>
+    <meta name="theme-color" content="#887aff">
+    <script src="musicplayer.js"></script>
+</body>
+</html>

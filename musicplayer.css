@@ -1,0 +1,132 @@
+.music-player {
+    display: none;
+    width: 300px;
+    background-color: #242424;
+    background-image: url(musicplayer-bg.png);
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    animation: scroll-musicplayer 15s linear infinite;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+@keyframes scroll-musicplayer {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 200px 200px;
+    }
+}
+
+.cover-art {
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.cover-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.song-info {
+    text-align: center;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.song-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.artist-name {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.control-btn:hover {
+    background-color: #333333;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: #4d4d4d;
+    border-radius: 2px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background: #ff68e6;
+    border-radius: 2px;
+    transition: width 0.1s linear;
+}
+
+.volume-control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+}
+
+.volume-slider {
+    flex: 1;
+    height: 4px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #4d4d4d;
+    border-radius: 2px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.toggle-img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 99999;
+}

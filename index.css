@@ -1,0 +1,43 @@
+.text-block-image {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.figure-it-out-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #dbd7ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 200px 200px;
+    }
+    .text-block-image {
+        width: 150px;
+    }
+
+    .social-icons {
+        bottom: 10px; 
+        right: 10px; 
+        gap: 5px; 
+    }
+
+    .social-icon-girlie {
+        width: 40px;
+    }
+
+    .social-icon {
+        width: 25px;
+        height: 25px;
+    }
+}

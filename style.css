@@ -1,0 +1,126 @@
+body {
+    background-color: #80a4ff;
+    background-image: url(secret.png);
+    background-size: 399px 399px; 
+    animation: scroll 10s linear infinite; 
+}
+
+@keyframes scroll {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 399px 399px;
+    }
+}
+
+.text-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    background-color: rgba(218, 149, 250, 0.5);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+}
+
+.text-block-image {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    display: flex;
+    gap: 10px;
+    z-index: 9999;
+    align-items: center;
+}
+
+.social-icon-girlie {
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.jared-dancing-gif {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.figure-it-out-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #dbd7ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.figure-it-out-link:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 200px 200px;
+    }
+
+    .text-block {
+        width: 90%;
+        height: auto;
+        font-size: 16px; 
+        padding: 10px; 
+    }
+
+    .text-block-image {
+        width: 150px;
+    }
+
+    .social-icons {
+        bottom: 10px; 
+        right: 10px; 
+        gap: 5px; 
+    }
+
+    .social-icon-girlie {
+        width: 40px;
+    }
+
+    .social-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
