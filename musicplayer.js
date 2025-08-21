@@ -250,6 +250,13 @@ const songs = [
         url: "https://file.garden/Zi1RIXKllhGepRPS/Website%20Files/robert%20battle.mp3",
         cover: "https://file.garden/Zi1RIXKllhGepRPS/Website%20Files/robert.png",
         loop: false 
+    },
+        {
+        title: "Break Free",
+        artist: "ThatGuyRamon, Rob Lungdren",
+        url: "https://file.garden/Zi1RIXKllhGepRPS/Website%20Files/Break%20Free.mp3",
+        cover: "https://file.garden/Zi1RIXKllhGepRPS/Website%20Files/outcome.jpg",
+        loop: false 
     }
     
     
