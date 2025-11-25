@@ -1,1 +1,1 @@
-hi
+My website!! This isn't exactly the best repo to base yourself off of if you're going to make a website, but feel free to look into how i made some of this stuff!!
