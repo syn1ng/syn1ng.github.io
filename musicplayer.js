@@ -182,6 +182,27 @@ const songs = [
         loop: false 
     },
     {
+        title: "CT Central Intro",
+        artist: "CT Himself",
+        url: "https://file.garden/Zi1RIXKllhGepRPS/Website%20Files/CT%20Central%20Intro.mp3",
+        cover: "https://file.garden/Zi1RIXKllhGepRPS/Website%20Files/ct%20great%20hit.jpg",
+        loop: false 
+    },
+    {
+        title: "Hiring Day",
+        artist: "CT Himself",
+        url: "https://file.garden/Zi1RIXKllhGepRPS/Website%20Files/Hiring%20Day.mp3",
+        cover: "https://file.garden/Zi1RIXKllhGepRPS/Website%20Files/ct%20great%20hit.jpg",
+        loop: false 
+    },
+    {
+        title: "Random Final Boss Theme I May Use Someday",
+        artist: "CT Himself",
+        url: "https://file.garden/Zi1RIXKllhGepRPS/Website%20Files/Random%20Final%20Boss%20Theme%20I%20May%20Use%20Someday.mp3",
+        cover: "https://file.garden/Zi1RIXKllhGepRPS/Website%20Files/ct%20great%20hit.jpg",
+        loop: false 
+    },
+    {
         title: "Bohemian Rhapsody",
         artist: "Queen",
         url: "https://file.garden/Zi1RIXKllhGepRPS/Website%20Files/Bohemian%20Rasphody%20-%20Queen.mp3",
@@ -314,7 +335,7 @@ function nextSong() {
         return;
     }
 
-    const randomChance = Math.floor(Math.random() * 128) + 1;
+    const randomChance = Math.floor(Math.random() * 64) + 1;
 
     if (randomChance === 1) {
         const specialSong = {
