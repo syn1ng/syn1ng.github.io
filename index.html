@@ -1,74 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="musicplayer.css">
-    <title>syning's site</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open</title>
+<style>
+html,body{margin:0;height:100%;background:#000;color:#fff;display:grid;place-items:center;font:clamp(1.2rem,2.2vw,2rem)/1.4 system-ui,sans-serif;text-align:center}
+#msg{opacity:0;transform:translateY(-1rem);transition:.8s;white-space:pre-wrap}
+#msg.visible{opacity:1;transform:none}
+img{width:280px;max-width:90vw;object-fit:contain;filter:drop-shadow(0 0 16px rgba(255,255,255,.15));animation:float 4s ease-in-out infinite}
+small{color:#888;font-size:.85rem;margin-top:1rem;display:block}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+</style>
 </head>
 <body>
-    <div class="text-block" id="intro-text">
-        <img src="top-image.gif" alt="Top Image" class="text-block-image" />
-        <p>heeyy bud so this isn't actually done. Sorry! Its not Done!! Leave.. You can leave</p>
-    </div>
-
-    <img id="toggle-music-player" class="toggle-img" src="hide.png" alt="Toggle Music Player" />
-
-    <div class="music-player" id="music-player">
-        <div class="cover-art">
-            <img id="cover-image" src="default-cover.jpg" alt="Cover Art">
-        </div>
-        <div class="song-info">
-            <div id="song-title" class="song-title">Song Title</div>
-            <div id="artist-name" class="artist-name">Artist Name</div>
-        </div>
-        <div class="controls">
-            <button id="prev-btn" class="control-btn">⏮</button>
-            <button id="play-btn" class="control-btn">▶️</button>
-            <button id="next-btn" class="control-btn">⏭</button>
-        </div>
-        <div class="progress-bar">
-            <div id="progress" class="progress"></div>
-        </div>
-        <div class="volume-control">
-            <span>🔊</span>
-            <input id="volume-slider" class="volume-slider" type="range" min="0" max="100" value="50">
-        </div>
-    </div>
-
-    <div class="social-icons">
-        <img src="girlie.gif" alt="Girlie GIF" class="social-icon-girlie" />
-        <a href="https://www.youtube.com/@syn1ng" target="_blank">
-            <img src="youtube.svg" alt="my youtube!!" class="social-icon" />
-        </a>
-        <a href="https://twitter.com/syn1ng" target="_blank">
-            <img src="twitter.svg" alt="my xeeter" class="social-icon" />
-        </a>
-    </div>
-
-
-    <script>
-        const toggleImage = document.getElementById('toggle-music-player');
-        const musicPlayer = document.getElementById('music-player');
-
-        toggleImage.addEventListener('click', () => {
-            if (musicPlayer.style.display === 'none' || musicPlayer.style.display === '') {
-                musicPlayer.style.display = 'block';
-                toggleImage.src = 'show.png';
-            } else {
-                musicPlayer.style.display = 'none';
-                toggleImage.src = 'hide.png';
-            }
-        });
-    </script>
-
-    <meta content="Syning Website" property="og:title">
-    <meta content="website." property="og:description">
-    <meta content="Welcome to my website! My name is" property="og:site_name">
-    <meta content='https://files.catbox.moe/8fyron.png' property='og:image'>
-    <meta name="theme-color" content="#887aff">
-    <script src="musicplayer.js"></script>
+<div>
+<div id="msg"></div>
+<img src="door.png" alt="marcus">
+<small>apolocheese for this shit website... i'm working on remaking it from scratch!!</small>
+</div>
+<script>
+const msg=document.getElementById("msg"),t="marcus";
+window.onload=()=>{msg.classList.add("visible");t.split("").forEach((c,i)=>setTimeout(()=>msg.textContent+=c,80*i))};
+</script>
 </body>
 </html>
