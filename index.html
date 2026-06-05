@@ -1,28 +1,13 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Open</title>
-<style>
-html,body{margin:0;height:100%;background:#000;color:#fff;display:grid;place-items:center;font:clamp(1.2rem,2.2vw,2rem)/1.4 system-ui,sans-serif;text-align:center}
-#msg{opacity:0;transform:translateY(-1rem);transition:.8s;white-space:pre-wrap}
-#msg.visible{opacity:1;transform:none}
-img{width:280px;max-width:90vw;object-fit:contain;filter:drop-shadow(0 0 16px rgba(255,255,255,.15));animation:float 4s ease-in-out infinite}
-small{color:#888;font-size:.85rem;margin-top:1rem;display:block}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-</style>
+    <body>
+        <title>booms! booms!! booms!!!!!!!!</title>
+        <div class="text14">
+            <div>t</div>
+            <div>e</div>
+            <div>s</div>
+            <div>t</div>
+            <div>!</div>
+        </div>
+    </body>
 </head>
-<body>
-<div>
-<div id="msg"></div>
-<img src="door.png" alt="marcus">
-<small>apolocheese for this shit website... i'm working on remaking it from scratch!!</small>
-<img src="baby.png" alt="baby saul">
-</div>
-<script>
-const msg=document.getElementById("msg"),t="marcus";
-window.onload=()=>{msg.classList.add("visible");t.split("").forEach((c,i)=>setTimeout(()=>msg.textContent+=c,80*i))};
-</script>
-</body>
-</html>
